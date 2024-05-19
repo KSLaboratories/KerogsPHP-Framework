@@ -8,7 +8,7 @@
 // Backend : /backend/
 // Labs/Test : /test/
 // Include : /inc/
-// Error File : /error/
+// Error : /public/error/
 
 // This file will call up everything you need for each of your pages. This is the file to call.
 // ? You can call this file with this command : require_once('../config.php'); 
@@ -41,8 +41,8 @@ $dkf_description = "Dragon Knowledge Framework. The framework for all your knowl
 $dkf_keywords = "Dragon, Knowledge, Framework, php, website, html, css, easy, best, Dragon Knowledge, Dradgon Framework, Dragon Knowledge Freamework, dkf, dk, kf";
 $dkf_author = "Kerogs";
 $dkf_lang = "English";
-$dkf_color = "#000000";
-$dkf_image = "https://";
+$dkf_color = "#a3815f";
+$dkf_image = "https://raw.githubusercontent.com/KSInfinite/Dragon-Knowledge-Framework/main/.ksinf/banner.png";
 // ======================================>
 
 
