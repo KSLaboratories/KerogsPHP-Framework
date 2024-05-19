@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirects all requests to the /public folder
+RewriteCond %{REQUEST_URI} !^/public
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Redirection error
+ErrorDocument 404 /error/404.php
