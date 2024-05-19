@@ -21,18 +21,29 @@
 
 
 
-// ======================================> Configuration
+// ======================================> Configuration php
 // Path base for the project
 $path = __DIR__;
 // Import the core php file
 require_once($path . '/backend/core.php');
-// Import composer ()
+// Import composer
 require_once($path . '/vendor/autoload.php');
 // ======================================>
 
 
 
 
+
+// ======================================> SEO Configuration
+$dkf_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$dkf_title = "Dragon Knowledge Framework";
+$dkf_description = "Dragon Knowledge Framework. The framework for all your knowledge needs.";
+$dkf_keywords = "Dragon, Knowledge, Framework, php, website, html, css, easy, best, Dragon Knowledge, Dradgon Framework, Dragon Knowledge Freamework, dkf, dk, kf";
+$dkf_author = "Kerogs";
+$dkf_lang = "English";
+$dkf_color = "#000000";
+$dkf_image = "https://";
+// ======================================>
 
 
 
