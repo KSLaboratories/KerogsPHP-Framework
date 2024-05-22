@@ -1,6 +1,6 @@
 <?php
 // Dragon Knowledge Framework
-// Version : 1.0.1
+// Version : 1.0.2
 
 // ! Users cannot access this root file/folder. For them, the root file will be in /public/.
 
@@ -12,10 +12,6 @@
 
 // This file will call up everything you need for each of your pages. This is the file to call.
 // ? You can call this file with this command : require_once('../config.php'); 
-
-
-
-
 
 
 
