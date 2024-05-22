@@ -1,6 +1,6 @@
 <?php
 // Dragon Knowledge Framework
-// Version : 1.0.2
+$dkf_version = "v1.0.2";
 
 // ! Users cannot access this root file/folder. For them, the root file will be in /public/.
 
