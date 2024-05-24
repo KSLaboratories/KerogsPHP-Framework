@@ -42,6 +42,16 @@ $dkf_image = "https://raw.githubusercontent.com/KSInfinite/Dragon-Knowledge-Fram
 // ======================================>
 
 
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') $dkf_url = "https://";
+else $dkf_urlHTTP = "http://";
+
+
+// ======================================> Var
+
+$dkf_urlHOST = $_SERVER['HTTP_HOST'];   
+// ======================================>
+
+
 
 
 // Show PHP info (uncomment the line below)

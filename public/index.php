@@ -24,6 +24,7 @@ require_once('../config.php');
             <a href="https://github.com/KSInfinite/Dragon-Knowledge-Framework" class="btn">Github</a>
             <!-- <a href="" class="btn">Documentation</a> -->
         </div>
+        <h2>URL : <?= $dkf_urlHTTP.$dkf_urlHOST ?></h2>
     </div>
 
 </body>
