@@ -1,6 +1,6 @@
 <?php
 // Dragon Knowledge Framework
-$dkf_version = "v1.0.5";
+$dkf_version = "v1.0.6";
 
 // ! Users cannot access this root file/folder. For them, the root file will be in /public/.
 
@@ -23,7 +23,7 @@ $path = __DIR__;
 // Import the core php file
 require_once($path . '/backend/core.php');
 // Import composer
-require_once($path . '/vendor/autoload.php');
+if(file_exists($path . '/vendor/autoload.php')) require_once($path . '/vendor/autoload.php');
 // ======================================>
 
 

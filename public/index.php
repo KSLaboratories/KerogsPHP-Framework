@@ -21,7 +21,7 @@ require_once('../config.php');
         <div id="page">
             <div id="header">
                 <div class="logo">
-                    <img src="/src/img/logo.png" alt="Ubuntu Logo">
+                    <img src="/src/img/logo.png" alt="Logo">
                 </div>
                 <div class="title">
                     <h1>Dragon Knowledge</h1>
