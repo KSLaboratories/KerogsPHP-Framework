@@ -25,3 +25,6 @@
 
 <!-- Theme-color -->
 <meta name="theme-color" content="<?= $dkf_color ?>" />
+
+<!-- favicon -->
+<link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">

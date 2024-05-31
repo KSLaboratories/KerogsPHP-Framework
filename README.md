@@ -16,12 +16,12 @@ You'll need ``NodeJS`` and ``Composer`` installed.
 ### Command
 
 ```sh
-git clone https://github.com/kerogs/magpie-watch.git
+git clone https://github.com/KSInfinite/Dragon-Knowledge-Framework.git
 ```
 
 2. **Go in the directory**
 ```sh
-cd magpie-watch
+cd Dragon-Knowledge-Framework
 ```
 
 3. **Install composer package**
@@ -53,9 +53,7 @@ all integrations added by Dragon Knowledge
 - Splide (https://splidejs.com/)
 - Boxicons (https://boxicons.com/)
 
-## Todo
-- [x] PHP pre-configuration
-- [] PHP database section
-- [] SCSS pre-configuration
-- [x] SEO pre-configuration
-- [] Documentation
+## Features
+- PHP preconfiguration
+- SEO preconfiguration
+- Pre-configured file tree
