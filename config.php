@@ -1,6 +1,8 @@
 <?php
 // Dragon Knowledge Framework
-$dkf_version = "v1.0.6";
+// https://github.com/KSInfinite/Dragon-Knowledge-Framework
+// Thanks for using it.
+$dkf_version = "v1.0.7";
 
 // ! Users cannot access this root file/folder. For them, the root file will be in /public/.
 
@@ -9,6 +11,7 @@ $dkf_version = "v1.0.6";
 // Labs/Test : /test/
 // Include : /inc/
 // Error : /public/error/
+// Docs : /public/docs/
 
 // This file will call up everything you need for each of your pages. This is the file to call.
 // ? You can call this file with this command : require_once('../config.php'); 
@@ -47,10 +50,10 @@ else $dkf_urlHTTP = "http://";
 
 
 // ======================================> Var
-
 $dkf_urlHOST = $_SERVER['HTTP_HOST'];   
-// ======================================>
-
+// ======================================> Labs/test IP authorization
+$dkf_testIPAuth[] = ["127.0.0.1", "localhost"];
+// ======================================>w
 
 
 

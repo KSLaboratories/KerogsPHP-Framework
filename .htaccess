@@ -1,19 +1,4 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^node\.localhost$ [NC]
-RewriteCond %{REQUEST_URI} !^/node_modules/
-RewriteRule ^(.*)$ /node_modules/$1 [L]
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^test\.localhost$ [NC]
-RewriteCond %{REQUEST_URI} !^/test/
-RewriteRule ^(.*)$ /test/$1 [L]
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^localhost$ [NC]
-RewriteCond %{REQUEST_URI} !^/public/
-RewriteRule ^(.*)$ /public/$1 [L]
-
-RewriteEngine on
 RewriteCond %{HTTP_HOST} !^(node|test)\.localhost$ [NC]
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^(.*)$ /public/$1 [L]
