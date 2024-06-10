@@ -52,7 +52,8 @@ else $dkf_urlHTTP = "http://";
 // ======================================> Var
 $dkf_urlHOST = $_SERVER['HTTP_HOST'];   
 // ======================================> Labs/test IP authorization
-$dkf_testIPAuth[] = ["127.0.0.1", "localhost"];
+$dkf_enable = true;
+$dkf_testIPAuth = ["localhost", "127.0.0.1"];
 // ======================================>w
 
 
