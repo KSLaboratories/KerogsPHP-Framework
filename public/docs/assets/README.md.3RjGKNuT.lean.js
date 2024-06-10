@@ -1,0 +1,1 @@
+import{_ as a,c as s,o as i,a4 as e}from"./chunks/framework.B-ZA8k-G.js";const u=JSON.parse('{"title":"Dragon-Knowledge-Docs","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),t={name:"README.md"},n=e("",13),l=[n];function o(h,d,p,c,r,g){return i(),s("div",null,l)}const F=a(t,[["render",o]]);export{u as __pageData,F as default};
