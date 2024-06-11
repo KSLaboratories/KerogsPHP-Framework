@@ -2,7 +2,7 @@
 // Dragon Knowledge Framework
 // https://github.com/KSInfinite/Dragon-Knowledge-Framework
 // Thanks for using it.
-$dkf_version = "v1.0.7";
+$dkf_version = "v1.1.1";
 
 // ! Users cannot access this root file/folder. For them, the root file will be in /public/.
 
@@ -19,44 +19,31 @@ $dkf_version = "v1.0.7";
 
 
 
-
 // ======================================> Configuration php
 // Path base for the project
 $path = __DIR__;
 // Import the core php file
 require_once($path . '/backend/core.php');
 // Import composer
-if(file_exists($path . '/vendor/autoload.php')) require_once($path . '/vendor/autoload.php');
+if (file_exists($path . '/vendor/autoload.php')) require_once($path . '/vendor/autoload.php');
 // ======================================>
-
-
-
-
-
-// ======================================> SEO Configuration
-$dkf_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$dkf_title = "Dragon Knowledge Framework";
-$dkf_description = "Dragon Knowledge Framework. The framework for all your knowledge needs.";
-$dkf_keywords = "Dragon, Knowledge, Framework, php, website, html, css, easy, best, Dragon Knowledge, Dradgon Framework, Dragon Knowledge Freamework, dkf, dk, kf";
-$dkf_author = "Kerogs";
-$dkf_lang = "English";
-$dkf_color = "#a3815f";
-$dkf_image = "https://raw.githubusercontent.com/KSInfinite/Dragon-Knowledge-Framework/main/.ksinf/banner.png";
-// ======================================>
-
 
 if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') $dkf_url = "https://";
 else $dkf_urlHTTP = "http://";
-
-
-// ======================================> Var
-$dkf_urlHOST = $_SERVER['HTTP_HOST'];   
-// ======================================> Labs/test IP authorization
-$dkf_enable = true;
-$dkf_testIPAuth = ["localhost", "127.0.0.1"];
-// ======================================>w
-
-
+$dkf_urlHOST = $_SERVER['HTTP_HOST'];
 
 // Show PHP info (uncomment the line below)
 // echo phpinfo();
+
+
+
+
+// config.yml
+// ! Don't touch everything under this line.
+
+// TODO : debug line under
+// use Symfony\Component\Yaml\Yaml;
+
+
+// $dkf_configFilePath = $path . '/config.yml';
+// $dkf_config = Yaml::parseFile($configFilePath);

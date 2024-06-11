@@ -1,6 +1,7 @@
 {
     "require": {
         "erusev/parsedown": "^1.7",
-        "ramsey/uuid": "^4.7"
+        "ramsey/uuid": "^4.7",
+        "symfony/yaml": "^7.1"
     }
 }

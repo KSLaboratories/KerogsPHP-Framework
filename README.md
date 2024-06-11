@@ -48,6 +48,7 @@ all integrations added by Dragon Knowledge
 ### Composer
 - Parsedown (https://packagist.org/packages/erusev/parsedown)
 - UUID (https://packagist.org/packages/ramsey/uuid)
+- YAML (https://packagist.org/packages/symfony/yaml)
 
 ### NodeJS
 - Splide (https://splidejs.com/)
