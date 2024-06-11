@@ -39,21 +39,6 @@ cd ./public
 npm install
 ```
 
-## Integration
-
-> [!IMPORTANT]
-> This section will soon be moved to the documentation
-all integrations added by Dragon Knowledge
-
-### Composer
-- Parsedown (https://packagist.org/packages/erusev/parsedown)
-- UUID (https://packagist.org/packages/ramsey/uuid)
-- YAML (https://packagist.org/packages/symfony/yaml)
-
-### NodeJS
-- Splide (https://splidejs.com/)
-- Boxicons (https://boxicons.com/)
-
 ## Features
 - PHP preconfiguration
 - SEO preconfiguration
