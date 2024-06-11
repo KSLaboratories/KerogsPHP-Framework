@@ -1,3 +1,0 @@
-public/docs/* linguist-documentation
-*.yaml linguist-language=YAML
-*.yml linguist-language=YAML
