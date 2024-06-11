@@ -28,7 +28,7 @@ require_once($path . '/backend/core.php');
 if (file_exists($path . '/vendor/autoload.php')) require_once($path . '/vendor/autoload.php');
 // ======================================>
 
-if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') $dkf_url = "https://";
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') $dkf_urlHTTP = "https://";
 else $dkf_urlHTTP = "http://";
 $dkf_urlHOST = $_SERVER['HTTP_HOST'];
 
@@ -40,10 +40,7 @@ $dkf_urlHOST = $_SERVER['HTTP_HOST'];
 
 // config.yml
 // ! Don't touch everything under this line.
+use Symfony\Component\Yaml\Yaml;
 
-// TODO : debug line under
-// use Symfony\Component\Yaml\Yaml;
-
-
-// $dkf_configFilePath = $path . '/config.yml';
-// $dkf_config = Yaml::parseFile($configFilePath);
+$dkf_configFilePath = $path . '/config.yml';
+$dkf_config = Yaml::parseFile($dkf_configFilePath);

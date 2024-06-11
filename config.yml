@@ -3,20 +3,20 @@
 # Thanks for using it.
 
 # SEO Configuration
-seo_configuration:
-  url: "(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']"
+seo:
   title: "Dragon Knowledge Framework"
   description: "Dragon Knowledge Framework. The framework for all your knowledge needs."
   keywords: "Dragon, Knowledge, Framework, php, website, html, css, easy, best, Dragon Knowledge, Dradgon Framework, Dragon Knowledge Freamework, dkf, dk, kf"
   author: "Kerogs"
   lang: "English"
+  lang_short: "en"
   color: "#a3815f"
   image: "https://raw.githubusercontent.com/KSInfinite/Dragon-Knowledge-Framework/main/.ksinf/banner.png"
+  favicon: "src/img/logo.png"
   sitemap: "src/xml/sitemap.xml"
 
 # Labs/test IP authorization Configuration
-labs_configuration:
+labs:
   enable: false
   labsIPAuth:
-    - localhost
     - 127.0.0.1
