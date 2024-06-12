@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a4 as e}from"./chunks/framework.B4ikntDe.js";const u=JSON.parse('{"title":"KerogsPHP-Docs","description":"","frontmatter":{},"headers":[],"relativePath":"README-fr.md","filePath":"README-fr.md"}'),t={name:"README-fr.md"},n=e("",13),l=[n];function o(p,h,d,r,c,k){return i(),a("div",null,l)}const F=s(t,[["render",o]]);export{u as __pageData,F as default};
