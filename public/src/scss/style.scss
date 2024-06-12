@@ -1,9 +1,9 @@
-$primary: #D4A373;
-$background: #1C1C1E;
-$backgroundalt:#333;
-$backgroundalt2:#888;
-$backgroundalt3:#444;
-$text: #FFF;
+$primary: #a038ec;
+$background: #F4F4F9;
+$backgroundalt: #EDEDF3;
+$backgroundalt2: #DADAE3;
+$backgroundalt3: #C7C7D2;
+$text: #212529;
 body {
     font-family: Arial, sans-serif;
     background-color: $background;
@@ -93,6 +93,18 @@ tt{
 
     a {
         color: $primary;
+    }
+}
+
+.title{
+    p a{
+        color: $text;
+        text-decoration: underline $primary;
+
+        &:hover{
+
+            color: $primary;
+        }
     }
 }
 

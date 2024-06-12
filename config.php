@@ -1,8 +1,7 @@
 <?php
-// Dragon Knowledge Framework
-// https://github.com/KSInfinite/Dragon-Knowledge-Framework
+// KerogsPHP Framework
+// https://github.com/KSInfinite/KerogsPHP-Framework
 // Thanks for using it.
-$dkf_version = "v1.1.1";
 
 // ! Users cannot access this root file/folder. For them, the root file will be in /public/.
 

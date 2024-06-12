@@ -16,17 +16,17 @@ require_once('backend/core-labs.php');
 </head>
 <style>
     * {
-        background-color: #1C1C1E;
+        background-color: #F4F4F9;
         font-family: sans-serif;
     }
 
     h1,
     h2 {
-        color: #D4A373;
+        color: #a038ec;
     }
 
     h1.p span {
-        color: #D4A373;
+        color: #a038ec;
     }
 
     table {
@@ -34,36 +34,36 @@ require_once('backend/core-labs.php');
     }
 
     tr * {
-        color: #fff;
-        background-color: #333 !important;
+        color: #212529;
+        background-color: #EDEDF3 !important;
     }
 
     tr.h td {
-        border: 1px solid #D4A373 !important;
+        border: 1px solid #a038ec !important;
         padding: 20px;
     }
 
     td {
-        border: 1px solid #888 !important;
+        border: 1px solid #DADAE3 !important;
     }
 
     td.e {
-        background-color: #444 !important;
+        background-color: #C7C7D2 !important;
     }
 
     tr:hover * {
-        background-color: #1C1C1E !important;
+        background-color: #DADAE3 !important;
     }
 
-    .logo{
+    .logo {
         position: fixed;
         bottom: -80px;
         right: -80px;
-        opacity: .1;
+        opacity: .2;
         width: 350px;
     }
 
-    .logo img{
+    .logo img {
         width: 100%;
     }
 </style>
@@ -80,7 +80,7 @@ require_once('backend/core-labs.php');
 <script>
     const elements = document.querySelectorAll('h1.p');
     elements.forEach(element => {
-        element.innerHTML += '<br><span>Drangon Knowledge</span>';
+        element.innerHTML += '<br><span>KerogsPHP Version <?= $dkf_config['other']['website_version'] ?></span>';
     });
 </script>
 
