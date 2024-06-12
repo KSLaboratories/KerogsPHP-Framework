@@ -80,7 +80,7 @@ require_once('backend/core-labs.php');
 <script>
     const elements = document.querySelectorAll('h1.p');
     elements.forEach(element => {
-        element.innerHTML += '<br><span>KerogsPHP Version <?= $dkf_config['other']['website_version'] ?></span>';
+        element.innerHTML += '<br><span>KerogsPHP Version <?= $kpf_config['other']['website_version'] ?></span>';
     });
 </script>
 

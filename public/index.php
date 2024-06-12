@@ -11,7 +11,7 @@ require_once('../config.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require_once '../inc/head.php' ?>
-    <title><?= $dkf_config["seo"]["title_short"] ?> | Good Job</title>
+    <title><?= $kpf_config["seo"]["title_short"] ?> | Good Job</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -24,8 +24,8 @@ require_once('../config.php');
                     <img src="/src/img/logo.png" alt="Logo">
                 </div>
                 <div class="title">
-                    <h1><?= $dkf_config["seo"]["title"] ?></h1>
-                    <p>Version <?= $dkf_config["other"]["website_version"] ?> - <a href="<?= $dkf_urlHTTP . $dkf_urlHOST ?>"><?= $dkf_urlHTTP . $dkf_urlHOST ?></a></p>
+                    <h1><?= $kpf_config["seo"]["title"] ?></h1>
+                    <p>Version <?= $kpf_config["other"]["website_version"] ?> - <a href="<?= $kpf_urlHTTP . $kpf_urlHOST ?>"><?= $kpf_urlHTTP . $kpf_urlHOST ?></a></p>
                 </div>
             </div>
             <div id="content">
