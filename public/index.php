@@ -25,7 +25,7 @@ require_once('../config.php');
                 </div>
                 <div class="title">
                     <h1><?= $kpf_config["seo"]["title"] ?></h1>
-                    <p>Version <?= $kpf_config["other"]["website_version"] ?> - <a href="<?= $kpf_urlHTTP . $kpf_urlHOST ?>"><?= $kpf_urlHTTP . $kpf_urlHOST ?></a></p>
+                    <p>Version <?= $kpf_config["framework"]["framework_version"] ?> - <a href="<?= $kpf_urlHTTP . $kpf_urlHOST ?>"><?= $kpf_urlHTTP . $kpf_urlHOST ?></a></p>
                 </div>
             </div>
             <div id="content">
