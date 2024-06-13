@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 error</title>
+    <title>403 error</title>
 </head>
 <style>
     *{
@@ -39,8 +39,8 @@
 
     <main>
         <div>
-            <h1>404 error</h1>
-            <p>Woops, we can't find that page</p>
+            <h1>403 error</h1>
+            <p>Access denied</p>
         </div>
     </main>
 
