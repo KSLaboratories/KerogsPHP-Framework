@@ -1,115 +1,127 @@
+// light
 $primary: #a038ec;
 $background: #F4F4F9;
 $backgroundalt: #EDEDF3;
 $backgroundalt2: #DADAE3;
 $backgroundalt3: #C7C7D2;
 $text: #212529;
+
+// dark
+// $primary: #a038ec;
+// $background: #212529;
+// $backgroundalt: #1c1c1f;
+// $backgroundalt2: #18181b;
+// $backgroundalt3: #141416;
+// $text: #F4F4F9;
+
 body {
     font-family: Arial, sans-serif;
     background-color: $background;
     color: $text;
     margin: 0;
     padding: 0;
-}
 
-tt{
-    color: $primary;
-    background-color: $backgroundalt3;
-    padding: 2px 6px;
-}
-
-#page {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid $backgroundalt2;
-    background-color: $backgroundalt;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-}
-
-#header {
-    display: flex;
-    align-items: center;
-    background-color: $backgroundalt;
-    padding: 10px;
-    border-bottom: 2px solid $primary;
-
-    .logo {
-        margin-right: 10px;
-        margin-right: auto;
-        img{
-            height: 150px;
-        }
-    }
-
-    .title{
-        text-align: right;
-        h1{
-            color: $primary;
-            line-height: 1em;
-            font-size: 1.8em;
-        }
-
-        p{
-            line-height: 1em;
-        }
-    }
-}
-
-#content {
-    h2 {
-        background-color: $primary;
-        color: $backgroundalt;
-        padding: 10px;
-        text-align: center;
-    }
-
-    h3 {
-        background-color: $backgroundalt3;
-        padding: 5px;
-        border-bottom: 1px solid $primary;
-        margin-top: 20px;
-    }
-
-    p {
-        line-height: 1.6;
-        margin: 10px 0;
-    }
-
-    pre {
-        background-color: $backgroundalt3;
-        padding: 10px;
-        border: 1px solid $backgroundalt2;
-        overflow-x: auto;
-    }
-
-    ul {
-        padding-left: 20px;
-
-        li {
-            margin: 5px 0;
-        }
-    }
-
-    a {
+    tt {
         color: $primary;
+        background-color: $backgroundalt3;
+        padding: 2px 6px;
     }
-}
 
-.title{
-    p a{
-        color: $text;
-        text-decoration: underline $primary;
+    #page {
+        max-width: 1100px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid $backgroundalt2;
+        background-color: $backgroundalt;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
 
-        &:hover{
+    #header {
+        display: flex;
+        align-items: center;
+        background-color: $backgroundalt;
+        padding: 10px;
+        border-bottom: 2px solid $primary;
 
+        .logo {
+            margin-right: 10px;
+            margin-right: auto;
+
+            img {
+                height: 150px;
+            }
+        }
+
+        .title {
+            text-align: right;
+
+            h1 {
+                color: $primary;
+                line-height: 1em;
+                font-size: 1.8em;
+            }
+
+            p {
+                line-height: 1em;
+            }
+        }
+    }
+
+    #content {
+        h2 {
+            background-color: $primary;
+            color: $backgroundalt;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h3 {
+            background-color: $backgroundalt3;
+            padding: 5px;
+            border-bottom: 1px solid $primary;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        pre {
+            background-color: $backgroundalt3;
+            padding: 10px;
+            border: 1px solid $backgroundalt2;
+            overflow-x: auto;
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                margin: 5px 0;
+            }
+        }
+
+        a {
             color: $primary;
+        }
+    }
+
+    .title {
+        p a {
+            color: $text;
+            text-decoration: underline $primary;
+
+            &:hover {
+
+                color: $primary;
+            }
         }
     }
 }
 
 @media screen and (max-width:1100px) {
-    #page{
+    #page {
         margin: 0;
     }
 }

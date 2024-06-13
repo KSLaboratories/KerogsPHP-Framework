@@ -11,7 +11,7 @@ seo:
   author: "Kerogs"
   lang: "English"
   lang_short: "en"
-  color: "#a3815f"
+  color: "#a038ec"
   image: "https://raw.githubusercontent.com/KSInfinite/KerogsPHP-Framework/main/.ksinf/banner.png"
   favicon: "src/img/logo.png"
   sitemap: "src/xml/sitemap.xml"

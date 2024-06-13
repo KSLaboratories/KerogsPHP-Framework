@@ -5,14 +5,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
-tt {
+body tt {
   color: #a038ec;
   background-color: #C7C7D2;
   padding: 2px 6px;
 }
-
-#page {
+body #page {
   max-width: 1100px;
   margin: 20px auto;
   padding: 20px;
@@ -20,70 +18,67 @@ tt {
   background-color: #EDEDF3;
   box-shadow: 0 0 10px rgb(0, 0, 0);
 }
-
-#header {
+body #header {
   display: flex;
   align-items: center;
   background-color: #EDEDF3;
   padding: 10px;
   border-bottom: 2px solid #a038ec;
 }
-#header .logo {
+body #header .logo {
   margin-right: 10px;
   margin-right: auto;
 }
-#header .logo img {
+body #header .logo img {
   height: 150px;
 }
-#header .title {
+body #header .title {
   text-align: right;
 }
-#header .title h1 {
+body #header .title h1 {
   color: #a038ec;
   line-height: 1em;
   font-size: 1.8em;
 }
-#header .title p {
+body #header .title p {
   line-height: 1em;
 }
-
-#content h2 {
+body #content h2 {
   background-color: #a038ec;
   color: #EDEDF3;
   padding: 10px;
   text-align: center;
 }
-#content h3 {
+body #content h3 {
   background-color: #C7C7D2;
   padding: 5px;
   border-bottom: 1px solid #a038ec;
   margin-top: 20px;
 }
-#content p {
+body #content p {
   line-height: 1.6;
   margin: 10px 0;
 }
-#content pre {
+body #content pre {
   background-color: #C7C7D2;
   padding: 10px;
   border: 1px solid #DADAE3;
   overflow-x: auto;
 }
-#content ul {
+body #content ul {
   padding-left: 20px;
 }
-#content ul li {
+body #content ul li {
   margin: 5px 0;
 }
-#content a {
+body #content a {
   color: #a038ec;
 }
-
-.title p a {
+body .title p a {
   color: #212529;
   text-decoration: underline #a038ec;
 }
-.title p a:hover {
+body .title p a:hover {
   color: #a038ec;
 }
 
