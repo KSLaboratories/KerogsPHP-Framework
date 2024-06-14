@@ -18,6 +18,10 @@ require_once('../config.php');
 <body>
 
     <body>
+
+        <button onclick="installPWA()">Télécharger l'application</button>
+
+
         <div id="page">
             <div id="header">
                 <div class="logo">
@@ -25,7 +29,7 @@ require_once('../config.php');
                 </div>
                 <div class="title">
                     <h1><?= $kpf_config["seo"]["title"] ?></h1>
-                    <p>Version <?= $kpf_config["framework"]["framework_version"] ?> - <a href="<?= $kpf_urlHTTP . $kpf_urlHOST ?>"><?= $kpf_urlHTTP . $kpf_urlHOST ?></a></p>
+                    <p>Version <?= $kpf_config["framework"]["framework_version"] ?> <span class="url">- <a href="<?= $kpf_urlHTTP . $kpf_urlHOST ?>"><?= $kpf_urlHTTP . $kpf_urlHOST ?></a></span></p>
                 </div>
             </div>
             <div id="content">
@@ -111,5 +115,36 @@ require_once('../config.php');
     </body>
 
 </body>
+<script>
+    let deferredPrompt;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        // Update UI to notify the user they can add to home screen
+        showInstallButton();
+    });
+
+    function showInstallButton() {
+        const installButton = document.querySelector('button');
+        installButton.style.display = 'block';
+    }
+
+    function installPWA() {
+        // Show the prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the A2HS prompt');
+            } else {
+                console.log('User dismissed the A2HS prompt');
+            }
+            deferredPrompt = null;
+        });
+    }
+</script>
 
 </html>

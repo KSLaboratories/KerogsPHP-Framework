@@ -18,7 +18,7 @@ seo:
 
 # Labs/test IP authorization Configuration
 labs:
-  enable: false
+  enable: true
   labsIPAuth:
     - 127.0.0.1
 
