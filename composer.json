@@ -3,6 +3,7 @@
         "erusev/parsedown": "^1.7",
         "ramsey/uuid": "^4.7",
         "symfony/yaml": "^7.1",
-        "simple-icons/simple-icons": "^12.2"
+        "simple-icons/simple-icons": "^12.2",
+        "fakerphp/faker": "^1.23"
     }
 }

@@ -5,6 +5,8 @@
     "start_url": "/index.php",
     "theme_color": "#a038ec",
     "background_color": "#F4F4F9",
+    "Author": "KS Infinite",
+    "version": "2.1.2",
     "icons": [
         {
             "src": "src/img/favicon.ico",
@@ -34,15 +36,20 @@
             "purpose": "maskable"
         }
     ],
-    "display": "fullscreen",
+    "display": "standalone",
     "screenshots": [
         {
-            "src": "src/pwa/preview1.png",
+            "src": "pwa/src/img/preview1.png",
             "sizes": "586x1041",
             "type": "image/png"
         },
         {
-            "src": "src/pwa/preview2.png",
+            "src": "pwa/src/img/preview3.png",
+            "sizes": "586x1041",
+            "type": "image/png"
+        },
+        {
+            "src": "pwa/src/img/preview1.png",
             "sizes": "586x1041",
             "type": "image/png"
         }
