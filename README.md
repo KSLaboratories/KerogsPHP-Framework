@@ -39,7 +39,16 @@ cd ./public
 npm install
 ```
 
+### Tips for use
+#### Use TypeScript
+Use this simple command to observe changes made in the file and automatically convert it to JavaScript
+```sh
+cd public; npx tsc --watch
+```
+
+
 ## Features
 - PHP preconfiguration
 - SEO preconfiguration
 - Pre-configured file tree
+- Support TypeScript

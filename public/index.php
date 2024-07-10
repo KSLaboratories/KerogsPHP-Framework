@@ -108,6 +108,7 @@ require_once('../config.php');
         </div>
     </div>
 
+    <?php require_once '../inc/script.php' ?>
 </body>
 
 </html>
