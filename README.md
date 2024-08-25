@@ -43,7 +43,7 @@ npm install
 #### Use TypeScript
 Use this simple command to observe changes made in the file and automatically convert it to JavaScript
 ```sh
-cd public; npx tsc --watch
+npx tsc --watch
 ```
 
 

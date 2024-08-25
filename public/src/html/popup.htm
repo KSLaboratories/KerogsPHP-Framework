@@ -284,3 +284,78 @@ framework:
         </ol>
     </div>
 </div>
+
+<!-- sass -->
+<div class="cardobj" data-objectif="sass">
+    <h2><i class='bx bxl-sass'></i> SASS <button class="cardObj__close"><i class='bx bx-x'></i></button></h2>
+    <hr>
+    <div class="cardobj__content">
+        <h2>SASS</h2>
+        <p><code>.sass</code> files are compiled to <code>.css</code> files in the <code>/public/src/css</code>
+
+        <p>If you're using SCSS and not SASS, you can always move the files to SASS. This won't change anything, the
+            folder simply serves as a separator with the .css compilation. By the way, .css.map files are also moved
+            into the .css folder. If you have any preferences, you can always do it your way.
+            <br><br>
+            The use of the SASS language is by no means compulsory. You can also delete the SASS folder itself if you
+            wish.
+        </p>
+
+        <h2>Auto compiler</h2>
+        <h3>Live Sass Compiler</h3>
+        <p>
+            If you wish to use a compiler for SASS, the tutorial will be ported to the : <b><em>Live Sass Compiler</em></b>
+            created
+            by
+            <b><em>Glenn Marks</em></b> (<a href="https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass"
+                target="_blank">see by clicking here</a>)
+        </p>
+        <h4>Configuration</h4>
+        <p>
+            You can configure the output of the sass file by going to “extensions settings” then “edit in settings.json” and adding the following line, which will automatically configure the CSS output of SASS files after compilation.
+        </p>
+        <pre>
+"liveSassCompile.settings.formats": [{
+    "format": "expanded",
+    "extensionName": ".css",
+    "savePath": "~/../css/"
+}
+        </pre>
+        <p>This configuration does the following:</p>
+        <ul>
+            <li><code>~/</code> allows access to the folder where the .sass file is located</li>
+            <li><code>../</code> allows you to go back one step</li>
+            <li><code>css/</code> allows you to create a folder (if it doesn't exist) and drop all compiled .css files into the CSS folder</li>
+        </ul>
+        <p>The result is as follows: </p>
+        <pre>~/../css/</pre>
+    </div>
+</div>
+
+<!-- typescript -->
+<div class="cardobj" data-objectif="typescript">
+    <h2><i class='bx bxl-typescript'></i> Typescript <button class="cardObj__close"><i class='bx bx-x'></i></button></h2>
+    <hr>
+    <div class="cardobj__content">
+        <h2>Typescript</h2>
+        <p>The typescript files are compiled to <code>.js</code> files in the <code>/public/src/js</code></p>
+        <p>Be sure to install the typescript compiler. with the following command in <code>npm i</code> (normaly already done with the step <b><em>Using NPM and Composer</em></b> )</p>
+        <pre>npm i</pre>
+        <p>If you wish to use Typescript, you need to type this in the terminal (at the root of the project)</p>
+        <pre>npx tsc --watch</pre>
+        <h3>Default tsconfig.json code</h3>
+        <pre>
+{
+    "compilerOptions": {
+        "outDir": "public/src/js/",
+        "noEmitOnError": true,
+        "target": "ES6"
+    },
+    "include": [
+        "public/src/ts/**/*.ts",
+        "public/src/ts/*.ts",
+    ]
+}
+        </pre>
+    </div>
+</div>

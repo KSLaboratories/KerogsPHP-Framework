@@ -27,7 +27,7 @@ require_once('../config.php');
         <hr>
         <ul>
             <li class="active"><i class='bx bx-book-alt'></i></li>
-            <li><i class='bx bx-donate-heart'></i></li>
+            <li><a href="https://github.com/KSLaboratories/KerogsPHP-Framework"><i class='bx bx-donate-heart'></i></a></li>
         </ul>
     </nav>
 
