@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "public/src/js/",
+        "outDir": "public/dist/local/js/",
         "noEmitOnError": true,
         "target": "ES6"
     },
