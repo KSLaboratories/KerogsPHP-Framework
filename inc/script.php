@@ -1,1 +1,1 @@
-<script src="src/js/main.js"></script>
+<script src="dist/local/js/main.js"></script>
