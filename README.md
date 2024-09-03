@@ -46,6 +46,24 @@ Use this simple command to observe changes made in the file and automatically co
 npx tsc --watch
 ```
 
+## Package
+### NPM
+|Name|Description|
+|-|-|
+|@splidejs/splide|to create slider/carousel|
+|boxicons|a multitude of icons to use|
+|typescript|for Typescript only|
+
+
+### Composer
+|Name|Description|required|
+|-|-|-|
+|erusev/parsedown|markdown to HTML converter|no|
+|ramsey/uuid|UUID generator|no|
+|symfony/yaml|YAML interpreter|yes|
+|simple-icons/simple-icons|Icon for brands/companies|no|
+|fakerphp/faker|false information generator|no|
+|kerogs/kerogs-php|toolbox just to simplify your life on certain things |no|
 
 ## Features
 - PHP preconfiguration
