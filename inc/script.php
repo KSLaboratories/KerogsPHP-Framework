@@ -1,1 +1,5 @@
-<script src="dist/local/js/main.js"></script>
+<?php
+
+// ! Put your script for all page here
+
+?>
