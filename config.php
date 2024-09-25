@@ -15,8 +15,22 @@
 // This file will call up everything you need for each of your pages. This is the file to call.
 // ? You can call this file with this command : require_once('../config.php'); 
 
-
-
+// ======================================> BDD
+// ? Set false if you don't want to use the database
+const KPF_USE_DATABASE = true;
+const KPF_DB_SERVER = "localhost";
+const KPF_DB_USERNAME = "root";
+const KPF_DB_PASSWORD = "root";
+const KPF_DB_DBNAME = "kerogstest";
+// ======================================>
+if(KPF_USE_DATABASE) {
+    try{
+      $db = new PDO('mysql:host='.KPF_DB_SERVER.';dbname='.KPF_DB_DBNAME.'', KPF_DB_USERNAME, KPF_DB_PASSWORD);
+      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch(PDOException $e) {
+        echo $e->getMessage();
+    }
+}
 
 // ======================================> Configuration php
 // Path base for the project
@@ -24,7 +38,7 @@ $path = __DIR__;
 // Import the core php file
 require_once($path . '/backend/core.php');
 // Import composer
-if (file_exists($path . '/vendor/autoload.php')) require_once($path . '/vendor/autoload.php');
+file_exists($path . '/vendor/autoload.php') ? require_once($path . '/vendor/autoload.php') : die("composer is not installed on the server. Open the console and select “composer install”.");
 // ======================================>
 
 if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') $kpf_urlHTTP = "https://";
