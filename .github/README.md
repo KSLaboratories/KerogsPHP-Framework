@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="logo" src=".ksinf/logo_ctr_full.png" height="95">
+    <img alt="logo" src="../.ksinf/logo_ctr_full.png" height="95">
     <h3>KerogsPHP Framework</h3>
     <p><em>Simplifying Web Development with Efficiency and Flexibility</em></p>
 </div>
