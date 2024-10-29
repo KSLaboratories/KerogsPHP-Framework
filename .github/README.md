@@ -46,6 +46,24 @@ Use this simple command to observe changes made in the file and automatically co
 npx tsc --watch
 ```
 
+#### config.yml
+![example config.yml](../.ksinf/configyml_ex.com.svg)
+
+#### .env file
+When you log on to the site for the first time, an .env file will be created automatically.
+
+It will contain the database connection information (to be modified as needed), as well as a randomly generated encryption key for later encryption if required. This value can be modified. If you wish, you can modify the ``.env`` file at will. Note that this file will be created automatically each time it is deleted or does not exist.
+
+You can disable automatic generation in the ``config.yml`` file.
+example :
+```ini
+CRYPT_KEY=7927400a-cf78-4977-9a66-36de48d47e09
+DB_SERVER=localhost
+DB_USERNAME=root
+DB_PASSWORD=root
+DB_DBNAME=database
+```
+
 ## Package
 ### NPM
 |Name|Description|
@@ -64,6 +82,7 @@ npx tsc --watch
 |simple-icons/simple-icons|Icon for brands/companies|no|
 |fakerphp/faker|false information generator|no|
 |kerogs/kerogs-php|toolbox just to simplify your life on certain things |no|
+|vlucas/phpdotenv|quickly retrieves values from the ``.env'' file and automatically places them in the ``$_ENV'' variable.|yes|
 
 ## Features
 - PHP preconfiguration

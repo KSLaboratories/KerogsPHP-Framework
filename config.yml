@@ -25,8 +25,18 @@ labs:
 # Other
 other:
   website_version: 1.0.0
+  
+  use_database: false
+  db_in_env:
+    # add database login in .env (recommended to true)
+    auto_add_db_in_env: true
+
+  env:
+    # if true all value in .env will be automatically added in $_ENV
+    use_env: true
+    auto_generate_env: true
 
 framework:
-  framework_version: 2.3.1-sh6
+  framework_version: 2.4.1-sh11
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"

@@ -7,30 +7,13 @@
 
 // Frontend : /public/
 // Backend : /backend/
-// Labs/Test : /test/
+// Labs/Test : /test/ (need to be enable in config.yml (access with test.(url) ex : test.localhost))
 // Include : /inc/
 // Error : /public/error/
 // Docs : /public/docs/
 
 // This file will call up everything you need for each of your pages. This is the file to call.
-// ? You can call this file with this command : require_once('../config.php'); 
-
-// ======================================> BDD
-// ? Set false if you don't want to use the database
-const KPF_USE_DATABASE = true;
-const KPF_DB_SERVER = "localhost";
-const KPF_DB_USERNAME = "root";
-const KPF_DB_PASSWORD = "root";
-const KPF_DB_DBNAME = "kerogstest";
-// ======================================>
-if(KPF_USE_DATABASE) {
-    try{
-      $db = new PDO('mysql:host='.KPF_DB_SERVER.';dbname='.KPF_DB_DBNAME.'', KPF_DB_USERNAME, KPF_DB_PASSWORD);
-      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch(PDOException $e) {
-        echo $e->getMessage();
-    }
-}
+// ? You can call this file with this line of code : require_once('../config.php'); 
 
 // ======================================> Configuration php
 // Path base for the project
@@ -57,3 +40,48 @@ use Symfony\Component\Yaml\Yaml;
 
 $kpf_configFilePath = $path . '/config.yml';
 $kpf_config = Yaml::parseFile($kpf_configFilePath);
+
+use Dotenv\Dotenv;
+
+use Ramsey\Uuid\Uuid;
+
+// ======================================> .env
+// ? if file .env doesn't exist then create it
+if (!file_exists($path.'/.env') && $kpf_config["other"]["env"]["auto_generate_env"]) {
+  $cryptKey = Uuid::uuid4()->toString();
+  
+  $envContent = $kpf_config["other"]["db_in_env"]["auto_add_db_in_env"] ? "CRYPT_KEY={$cryptKey}\nDB_SERVER=localhost\nDB_USERNAME=root\nDB_PASSWORD=root\nDB_DBNAME=database\n" : "CRYPT_KEY={$cryptKey}";
+
+  file_put_contents($path.'/.env', $envContent);
+}
+
+if($kpf_config["other"]["env"]["use_env"]){
+  $dotenv = Dotenv::createImmutable($path);
+  $dotenv->load();
+}
+// ======================================>
+
+// ======================================> BDD
+// ? get if you want to use database (from config.yml)
+// ======================================>
+if ($kpf_config["other"]["use_database"]) {
+  if($kpf_config["other"]["db_in_env"]["auto_add_db_in_env"]) {
+    $KPF_DB_SERVER = $_ENV['DB_SERVER'];
+    $KPF_DB_USERNAME = $_ENV['DB_USERNAME'];
+    $KPF_DB_PASSWORD = $_ENV['DB_PASSWORD'];
+    $KPF_DB_DBNAME = $_ENV['DB_DBNAME'];
+  } else{
+    // ! add here your database login if auto_add_db_in_env is false
+    $KPF_DB_SERVER = "";
+    $KPF_DB_USERNAME = "";
+    $KPF_DB_PASSWORD = "";
+    $KPF_DB_DBNAME = "";
+  }
+  
+  try {
+    $db = new PDO('mysql:host=' . $KPF_DB_SERVER . ';dbname=' . $KPF_DB_DBNAME . '', $KPF_DB_USERNAME, $KPF_DB_PASSWORD);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  } catch (PDOException $e) {
+    echo $e->getMessage();
+  }
+}
