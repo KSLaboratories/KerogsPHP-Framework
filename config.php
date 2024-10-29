@@ -47,25 +47,37 @@ use Ramsey\Uuid\Uuid;
 
 // ======================================> .env
 // ? if file .env doesn't exist then create it
-if (!file_exists($path.'/.env')) {
+if (!file_exists($path.'/.env') && $kpf_config["other"]["env"]["auto_generate_env"]) {
   $cryptKey = Uuid::uuid4()->toString();
-  $envContent = "CRYPT_KEY={$cryptKey}\nDB_SERVER=localhost\nDB_USERNAME=root\nDB_PASSWORD=root\nDB_DBNAME=database\n";
+  
+  $envContent = $kpf_config["other"]["db_in_env"]["auto_add_db_in_env"] ? "CRYPT_KEY={$cryptKey}\nDB_SERVER=localhost\nDB_USERNAME=root\nDB_PASSWORD=root\nDB_DBNAME=database\n" : "CRYPT_KEY={$cryptKey}";
+
   file_put_contents($path.'/.env', $envContent);
 }
 
-$dotenv = Dotenv::createImmutable($path."/");
-$dotenv->load();
+if($kpf_config["other"]["env"]["use_env"]){
+  $dotenv = Dotenv::createImmutable($path);
+  $dotenv->load();
+}
 // ======================================>
 
 // ======================================> BDD
 // ? get if you want to use database (from config.yml)
-$KPF_USE_DATABASE = $kpf_config["other"]["use_database"];
-$KPF_DB_SERVER = $_ENV['DB_SERVER'];
-$KPF_DB_USERNAME = $_ENV['DB_USERNAME'];
-$KPF_DB_PASSWORD = $_ENV['DB_PASSWORD'];
-$KPF_DB_DBNAME = $_ENV['DB_DBNAME'];
 // ======================================>
-if ($KPF_USE_DATABASE) {
+if ($kpf_config["other"]["use_database"]) {
+  if($kpf_config["other"]["db_in_env"]["auto_add_db_in_env"]) {
+    $KPF_DB_SERVER = $_ENV['DB_SERVER'];
+    $KPF_DB_USERNAME = $_ENV['DB_USERNAME'];
+    $KPF_DB_PASSWORD = $_ENV['DB_PASSWORD'];
+    $KPF_DB_DBNAME = $_ENV['DB_DBNAME'];
+  } else{
+    // ! add here your database login if auto_add_db_in_env is false
+    $KPF_DB_SERVER = "";
+    $KPF_DB_USERNAME = "";
+    $KPF_DB_PASSWORD = "";
+    $KPF_DB_DBNAME = "";
+  }
+  
   try {
     $db = new PDO('mysql:host=' . $KPF_DB_SERVER . ';dbname=' . $KPF_DB_DBNAME . '', $KPF_DB_USERNAME, $KPF_DB_PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
