@@ -29,9 +29,13 @@ if (isset($_GET['action']) && $_GET['action'] == 'clean') {
     foreach ($images as $image) {
         unlink($image);
     }
+    file_put_contents("src/img/.gitkeep", "");
 
     // ! remove this file
     unlink('delete-me.php');
+
+    header('location: /');
+    exit();
 }
 
 ?>
