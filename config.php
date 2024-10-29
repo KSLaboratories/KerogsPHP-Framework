@@ -7,7 +7,7 @@
 
 // Frontend : /public/
 // Backend : /backend/
-// Labs/Test : /test/
+// Labs/Test : /test/ (need to be enable in config.yml (access with test.(url) ex : test.localhost))
 // Include : /inc/
 // Error : /public/error/
 // Docs : /public/docs/

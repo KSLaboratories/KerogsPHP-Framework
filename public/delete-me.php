@@ -22,6 +22,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'clean') {
     // ! remove JS
     $default_ts_content = 'console.log("main -> OK");';
     file_put_contents("src/ts/main.ts", $default_ts_content);
+    file_put_contents("src/dist/local/js/main.js", $default_ts_content);
+    
     // ! remove this file
     unlink('delete-me.php');
 }
