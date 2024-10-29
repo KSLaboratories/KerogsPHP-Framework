@@ -37,6 +37,6 @@ other:
     auto_generate_env: true
 
 framework:
-  framework_version: 2.4.1-sh9
+  framework_version: 2.4.1-sh11
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"
