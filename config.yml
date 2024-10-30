@@ -35,8 +35,13 @@ other:
     # if true all value in .env will be automatically added in $_ENV
     use_env: true
     auto_generate_env: true
+    
+    admin:
+      add_login_admin: true
+      # admin password automattically hashed (changed automatically in .env if you change it)
+      admin_password: "alexia1"
 
 framework:
-  framework_version: 2.4.1-sh12
+  framework_version: 2.5.1-sh14
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"
