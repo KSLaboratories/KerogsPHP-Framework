@@ -1,5 +1,12 @@
 <?php
 
+// ! In the top right-hand corner of the web page, you'll find a button which,
+// ! once clicked, will automatically delete everything and clean up all the 
+// !necessary files.
+
+
+
+
 if (isset($_GET['action']) && $_GET['action'] == 'clean') {
 
 
