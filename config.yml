@@ -31,6 +31,7 @@ other:
     # add database login in .env (recommended to true)
     auto_add_db_in_env: true
 
+  # .env informations
   env:
     # if true all value in .env will be automatically added in $_ENV
     use_env: true
@@ -42,6 +43,6 @@ other:
       admin_password: "alexia1"
 
 framework:
-  framework_version: 2.5.1-sh14
+  framework_version: 2.4.2-sh15
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"

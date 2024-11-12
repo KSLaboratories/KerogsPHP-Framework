@@ -31,10 +31,10 @@
 <link rel="apple-touch-icon" href="<?= $kpf_config["seo"]["favicon"] ?>">
 
 <!-- PWA -->
-<link rel="manifest" href="manifest.json">
+<!-- <link rel="manifest" href="manifest.json">
 <script>
     //if browser support service worker
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js');
     };
-</script>
+</script> -->
