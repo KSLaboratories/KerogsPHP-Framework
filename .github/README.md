@@ -39,6 +39,11 @@ cd ./public
 npm install
 ```
 
+### Docker build && run
+```sh
+docker compose up --build
+```
+
 ### Tips for use
 #### Use TypeScript
 Use this simple command to observe changes made in the file and automatically convert it to JavaScript
