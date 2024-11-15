@@ -43,6 +43,6 @@ other:
       admin_password: "alexia1"
 
 framework:
-  framework_version: 2.4.2-sh15
+  framework_version: 2.4.3-sh16
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"
