@@ -4,6 +4,6 @@
     "boxicons": "^2.1.4"
   },
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "typescript": "^5.7.2"
   }
 }
