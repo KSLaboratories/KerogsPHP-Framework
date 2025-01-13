@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19afa57563e482c6fabc8378860da5ec",
+    "content-hash": "89b177578d0096732daf6a4d6c9eb34d",
     "packages": [
         {
             "name": "brick/math",
@@ -592,16 +592,16 @@
         },
         {
             "name": "simple-icons/simple-icons",
-            "version": "13.11.0",
+            "version": "14.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simple-icons/simple-icons.git",
-                "reference": "4050fc838e7aade0338d0e16f196831a0d88ba1f"
+                "reference": "9db31a4c69eddc3261d84eb0659ca4052db6377c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simple-icons/simple-icons/zipball/4050fc838e7aade0338d0e16f196831a0d88ba1f",
-                "reference": "4050fc838e7aade0338d0e16f196831a0d88ba1f",
+                "url": "https://api.github.com/repos/simple-icons/simple-icons/zipball/9db31a4c69eddc3261d84eb0659ca4052db6377c",
+                "reference": "9db31a4c69eddc3261d84eb0659ca4052db6377c",
                 "shasum": ""
             },
             "type": "library",
@@ -616,8 +616,11 @@
                 "svg"
             ],
             "support": {
+                "chat": "https://discord.gg/vUXFa7t5xJ",
                 "docs": "https://github.com/simple-icons/simple-icons#php-usage-",
+                "forum": "https://github.com/simple-icons/simple-icons/discussions",
                 "issues": "https://github.com/simple-icons/simple-icons/issues",
+                "security": "https://github.com/simple-icons/simple-icons/security/policy",
                 "source": "https://github.com/simple-icons/simple-icons"
             },
             "funding": [
@@ -626,7 +629,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2024-09-22T07:29:19+00:00"
+            "time": "2025-01-12T01:22:30+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -1098,5 +1101,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
