@@ -4,7 +4,10 @@ updates:
     directory: '/public'
     schedule:
       interval: 'daily'
+    allow-auto-merge: true
+
   - package-ecosystem: 'composer'
     directory: '/'
     schedule:
       interval: 'daily'
+    allow-auto-merge: true
