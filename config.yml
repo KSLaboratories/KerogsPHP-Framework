@@ -40,9 +40,9 @@ other:
     admin:
       add_login_admin: true
       # admin password automattically hashed (changed automatically in .env if you change it)
-      admin_password: "alexia1"
+      admin_password: "kerogs"
 
 framework:
-  framework_version: 2.4.3-sh16
+  framework_version: 2.5.3
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"
