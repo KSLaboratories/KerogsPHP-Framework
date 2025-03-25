@@ -592,16 +592,16 @@
         },
         {
             "name": "simple-icons/simple-icons",
-            "version": "14.9.0",
+            "version": "14.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simple-icons/simple-icons.git",
-                "reference": "16b53851895579c158d8242d9e78cd0c3d56f8e3"
+                "reference": "ce4fbc1227c40eedb32016928649d1d2a8e36d8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simple-icons/simple-icons/zipball/16b53851895579c158d8242d9e78cd0c3d56f8e3",
-                "reference": "16b53851895579c158d8242d9e78cd0c3d56f8e3",
+                "url": "https://api.github.com/repos/simple-icons/simple-icons/zipball/ce4fbc1227c40eedb32016928649d1d2a8e36d8c",
+                "reference": "ce4fbc1227c40eedb32016928649d1d2a8e36d8c",
                 "shasum": ""
             },
             "type": "library",
@@ -629,7 +629,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-03-02T01:35:43+00:00"
+            "time": "2025-03-23T14:24:22+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
