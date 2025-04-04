@@ -13,14 +13,8 @@ seo:
   lang_short: "en"
   color: "#a038ec"
   image: "https://raw.githubusercontent.com/KSInfinite/KerogsPHP-Framework/main/.ksinf/banner.png"
-  favicon: "src/img/logo.png"
+  favicon: "src/img/favicon.ico"
   sitemap: "src/xml/sitemap.xml"
-
-# Labs/test IP authorization Configuration
-labs:
-  enable: false
-  labsIPAuth:
-    - 127.0.0.1
 
 # Other
 other:
@@ -43,6 +37,6 @@ other:
       admin_password: "kerogs"
 
 framework:
-  framework_version: 2.5.4
+  framework_version: 3.1.1
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"

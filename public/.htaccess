@@ -1,1 +1,24 @@
+# Interdire l'accès à .htaccess
+<Files ".htaccess">
+  Require all denied
+</Files>
+
+# Interdire l'accès à package-lock.json et package.json
+<FilesMatch "^(package-lock\.json|package\.json)$">
+  Require all denied
+</FilesMatch>
+
+# Interdire l'accès aux fichiers dans le dossier src/sass
+RewriteRule ^src/sass/ - [F,L]
+
+# Interdire l'accès aux fichiers dans le dossier src/ts
+RewriteRule ^src/ts/ - [F,L]
+
+# Rediriger en 404 si les fichiers n'existent pas
 ErrorDocument 404 /error/404.php
+ErrorDocument 403 /error/403.php
+
+# Réécriture d'URL pour des URLs plus propres
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9\-_]+)$ $1.php [L]

@@ -7,6 +7,15 @@
 ## Presentation
 KerogsPHP Framework is an easy-to-use PHP framework for websites. Its architecture is simple to understand yet effective. It also provides a good basis for all kinds of projects, especially webapps. It allows you to be autonomous and free in your choices, without being heavy or cumbersome. It also brings with it a certain notion of basic security.
 
+## Features
+- PHP preconfiguration
+- SEO preconfiguration 
+- Pre-configured file tree
+- Support TypeScript
+- Dependabot preconfiguration
+- docker preconfigured
+- htaccess preconfigured
+
 ## Installation
 1. **Clone the repository**
 
@@ -73,8 +82,6 @@ DB_DBNAME=database
 ### NPM
 |Name|Description|
 |-|-|
-|@splidejs/splide|to create slider/carousel|
-|boxicons|a multitude of icons to use|
 |typescript|for Typescript only|
 
 
@@ -84,13 +91,4 @@ DB_DBNAME=database
 |erusev/parsedown|markdown to HTML converter|no|
 |ramsey/uuid|UUID generator|no|
 |symfony/yaml|YAML interpreter|yes|
-|simple-icons/simple-icons|Icon for brands/companies|no|
-|fakerphp/faker|false information generator|no|
-|kerogs/kerogs-php|toolbox just to simplify your life on certain things |no|
 |vlucas/phpdotenv|quickly retrieves values from the ``.env'' file and automatically places them in the ``$_ENV'' variable.|yes|
-
-## Features
-- PHP preconfiguration
-- SEO preconfiguration
-- Pre-configured file tree
-- Support TypeScript

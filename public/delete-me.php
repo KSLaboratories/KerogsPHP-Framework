@@ -47,6 +47,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'clean') {
 
 ?>
 
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <nav>
     <div class="logo">
         <img src="src/img/logo.png" alt="logo">
@@ -338,77 +340,6 @@ title_short: "KsPHP Framework"</pre>
             <p>you can retrieve all the information written there using the following PHP variable :
                 <code>$kpf_config['val1']['val2']</code>
             </p>
-            <h3>PWA configuration</h3>
-            <p>Here is the list of file paths for the PWA</p>
-            <ul>
-                <li><code>/public/sw.js</code></li>
-                <li><code>/public/manifest.json</code></li>
-                <li><code>/public/pwa/*</code> <- All PWA files here</li>
-            </ul>
-            <p>If you're not using PWA, you can just delete the following files/folders. Otherwise, just replace the
-                information in <code>/public/manifest.json</code> with the following</p>
-            <p>content of <code>manifest.json</code> file</p>
-            <pre>
-{
-"short_name": "KerogsPHP",
-"name": "KerogsPHP Framework",
-"description": "KerogsPHP Framework. The framework for all your development needs.",
-"start_url": "/index.php",
-"theme_color": "#a038ec",
-"background_color": "#F4F4F9",
-"Author": "KS Infinite",
-"version": "2.1.2",
-"icons": [
-    {
-        "src": "src/img/favicon.ico",
-        "type": "image/x-icon",
-        "sizes": "16x16 32x32"
-    },
-    {
-        "src": "src/img/icon-192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-    },
-    {
-        "src": "src/img/icon-512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-    },
-    {
-        "src": "src/img/icon-192-maskable.png",
-        "type": "image/png",
-        "sizes": "192x192",
-        "purpose": "maskable"
-    },
-    {
-        "src": "src/img/icon-512-maskable.png",
-        "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "maskable"
-    }
-],
-"display": "standalone",
-"screenshots": [
-    {
-        "src": "pwa/src/img/preview1.png",
-        "sizes": "586x1041",
-        "type": "image/png"
-    },
-    {
-        "src": "pwa/src/img/preview3.png",
-        "sizes": "586x1041",
-        "type": "image/png"
-    },
-    {
-        "src": "pwa/src/img/preview1.png",
-        "sizes": "586x1041",
-        "type": "image/png"
-    }
-],
-"lang": "en",
-"orientation": "portrait"
-}          
-    </pre>
         </div>
     </div>
 
