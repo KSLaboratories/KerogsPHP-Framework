@@ -43,6 +43,6 @@ other:
       admin_password: "kerogs"
 
 framework:
-  framework_version: 2.5.3
+  framework_version: 2.5.4
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"
