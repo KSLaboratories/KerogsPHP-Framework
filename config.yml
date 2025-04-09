@@ -4,6 +4,7 @@
 
 # SEO Configuration
 seo:
+  site_name: "KerogsPHP Framework"
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"
   description: "KerogsPHP Framework. The framework for all your development needs."
@@ -37,6 +38,6 @@ other:
       admin_password: "kerogs"
 
 framework:
-  framework_version: 3.1.1
+  framework_version: 3.1.2
   title: "KerogsPHP Framework"
   title_short: "KsPHP Framework"

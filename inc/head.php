@@ -15,6 +15,7 @@
 <meta property="og:title" content="<?= $kpf_config["seo"]["title"] ?>" />
 <meta property="og:description" content="<?= $kpf_config["seo"]["description"] ?>" />
 <meta property="og:image" content="<?= $kpf_config["seo"]["image"] ?>" />
+<meta property="og:site_name" content="<?= $kpf_config["seo"]["site_name"] ?>">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
